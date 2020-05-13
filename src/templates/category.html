@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <script src="https://kit.fontawesome.com/a53353dc46.js" crossorigin="anonymous"></script>
+    <vtex:metaTags />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/arquivos/tiendatest2.css" />
+</head>
+
+<body>
+    <vtex:template id="00-header" />
+    <vtex.cmc:breadCrumb />
+    <div class="fullBanner">
+        <div class="container fullBannerContainer">
+            <vtex:contentPlaceHolder id="Full Banner" />
+        </div>
+    </div>
+    <main role="main">
+        <div class="container mainContainer">
+            <vtex.cmc:searchNavigator />
+            <vtex.cmc:searchResult layout="1daabf0d-5f18-47a2-8b3f-709dc17dc522" itemCount="24" columnCount="24" />
+        </div>
+    </main>
+    <!-- Footer -->
+    <vtex:template id="00-footer" />
+    <!-- JS -->
+    <script type="text/javascript" src="/arquivos/tiendatest2.js"></script>
+</body>
+
+</html>

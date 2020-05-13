@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
+
+$font-family: "Opens Sans", sans-serif;
+$fonticon: "Font Awesome 5 Free";
+$gris-linea: #f2f2f2;
+$gris-font: #222;
+
+// Github
+// $font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+//   Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
+// Wordpress
+// $font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans,
+//   Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  list-style: none;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  &:before,
+  &:after {
+    box-sizing: inherit;
+  }
+}
+
+html {
+  height: 100%;
+
+  body {
+    height: inherit;
+    font-family: $font-family;
+    background-color: #eee;
+  }
+}
+#ajaxBusy {
+  display: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 600;
+}
+
+input,
+select,
+button {
+  font-family: $font-family;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+}

@@ -1,0 +1,41 @@
+#set($id = $product.Id)
+#set($idSku = $product.productVariantId)
+#set($uri = $product.Uri)
+#set($name = $product.HtmlEscapedName)
+
+<a href="$uri" title="$name" data-id="$id" data-sku="$idSku">
+    <div class="image">
+        $product.GetImageTag(30)
+    </div>
+</a>
+<div class="top">
+    $product.BrandLink
+</div>
+<a href="$uri" title="$name" data-id="$id" data-sku="$idSku">
+    <em class="descuentos">
+        <div class="ListPriceMinusBestPriceInPercent">$product.ListPriceMinusBestPriceInPercent</div>
+    </em>
+    <p class="name">$name</p>
+    <span class="tag">
+        $product.HightLight
+    </span>
+    <div class="price">
+        <span>Precio internet:</span>
+        #if($product.HasBestPrice)
+        <span class="HasBestPrice">
+            <em class="listPrice">$product.ListPrice</em>
+        </span>
+        #else
+        <span class="listPrice"></span>
+        #end
+        <span class="bestPrice">$product.BestPrice</span>
+    </div>
+    #if ($product.NumbersOfInstallment > 1)
+    <div class="cuotas">
+        <span>
+            <em class="NumbersOfInstallment">$product.NumbersOfInstallment</em>x <em
+                class="InstallmentValue">$product.InstallmentValue</em> sin interés
+        </span>
+    </div>
+    #end
+</a>

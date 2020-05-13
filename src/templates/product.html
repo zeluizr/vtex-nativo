@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:vtex="http://www.vtex.com.br/2009/vtex-common"
+    xmlns:vtex.cmc="http://www.vtex.com.br/2009/vtex-commerce">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <script src="https://kit.fontawesome.com/a53353dc46.js" crossorigin="anonymous"></script>
+    <vtex:metaTags />
+    <!-- CSS -->
+    <link rel="stylesheet" href="/arquivos/tiendatest2.css" />
+</head>
+
+<body>
+    <vtex:template id="00-header" />
+    <vtex.cmc:breadCrumb />
+    <div class="fullBanner">
+        <div class="container fullBannerContainer">
+            <vtex:contentPlaceHolder id="Full Banner" />
+        </div>
+    </div>
+    <main role="main">
+        <div class="container mainContainer">
+            <aside>
+                <div class="galery">
+                    <vtex.cmc:ProductImage />
+                </div>
+            </aside>
+            <section>
+                <vtex.cmc:brandName />
+                <vtex.cmc:productName />
+                <vtex.cmc:skuReference />
+                <div class="skuPrice">
+                    <div class="HightLight">
+                        <vtex.cmc:HightLight />
+                        <vtex.cmc:discountHightLight />
+                    </div>
+                    <vtex.cmc:skuPrice />
+                </div>
+                <button class="comprar hvr-float-shadow">Agregar al carro</button>
+                <vtex.cmc:productDescriptionShort />
+            </section>
+
+        </div>
+        <section class="description-block">
+            <div class="container descriptionBlockContainer">
+                <div class="descripcion">
+                    <h2>Descripción</h2>
+                    <vtex.cmc:ProductDescription />
+                </div>
+                <div class="descripcion-tecnica">
+                    <h2>Especificación</h2>
+                    <vtex.cmc:productSpecification />
+                </div>
+                <div class="dimensions-tecnica">
+                    <h2>Dimensions</h2>
+                    <vtex.cmc:stockKeepingUnitMeasures />
+                </div>
+            </div>
+        </section>
+        <div class="container automaticShelfContainer">
+            <vtex.cmc:BuyTogether />
+            <vtex:contentPlaceHolder id="ColecaoQVVT" />
+            <vtex:contentPlaceHolder id="ColecaoQVCT" />
+            <vtex:contentPlaceHolder id="ColecaoQCCT" />
+        </div>
+    </main>
+    <!-- Footer -->
+    <vtex:template id="00-footer" />
+    <!-- JS -->
+    <script type="text/javascript" src="/arquivos/tiendatest2.js"></script>
+</body>
+
+</html>

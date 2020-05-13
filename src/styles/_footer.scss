@@ -1,0 +1,40 @@
+footer.footer {
+  background-color: #ffc107;
+  padding: 40px 0;
+  .containerFooter {
+    display: flex;
+    .box-1 {
+      width: 300px;
+      form {
+        input {
+          height: 40px;
+          border: 1px solid $gris-linea;
+          background-color: white;
+        }
+        button {
+          width: 40px;
+          height: 40px;
+          background-color: white;
+        }
+      }
+    }
+    .box-2 {
+      flex: 1;
+      width: calc(100% - 300px);
+
+      nav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+        ul {
+          li {
+            margin-bottom: 10px;
+            a {
+              color: $gris-font;
+            }
+          }
+        }
+      }
+    }
+  }
+}
