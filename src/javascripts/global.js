@@ -11,12 +11,12 @@ $(function () {
 
     $.ajax({
       headers: {
-        Accept: "application/json; charset=utf-8",
-        "Content-Type": "application/json; charset=utf-8",
+        accept: "application/vnd.vtex.ds.v10+json",
+        "content-type": "application/json",
       },
       data: JSON.stringify(datos),
-      type: "PATCH",
-      url: "//api.vtexcrm.com.br/tiendatest1/dataentities/CL/documents",
+      type: "POST",
+      url: "/api/dataentities/CL/documents",
       success: function (data) {
         $("").text("Email inscripto con suceso!");
       },
