@@ -1,3 +1,19 @@
 @import "base";
 @import "header";
+
+body.home {
+  @import "main";
+}
+
+@import "shelf";
+
+body.department,
+body.category {
+  @import "categories";
+}
+
+body.department {
+  @import "department";
+}
+
 @import "footer";
