@@ -1,0 +1,59 @@
+.mainContainer {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+
+  aside {
+    width: 500px;
+    margin-right: 20px;
+
+    #image-main {
+      width: 100%;
+      height: auto;
+    }
+
+    .zoomPup,
+    .zoomWindow,
+    .zoomWrapper {
+      display: none;
+    }
+
+    .thumbs {
+      display: flex;
+      margin: 10px 0;
+      li {
+        border: 1px solid #222;
+      }
+    }
+  }
+
+  section {
+    flex: 1;
+  }
+}
+
+.productDescription {
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 20px;
+    font-weight: normal;
+  }
+
+  p {
+    font-size: 12px;
+  }
+
+  table {
+  }
+}
+
+.shelfContainer {
+  ul {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+  }
+}

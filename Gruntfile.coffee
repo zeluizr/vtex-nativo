@@ -70,8 +70,8 @@ module.exports = (grunt) ->
       options: 
         separator: '\n'
       dist: 
-        src: ['src/javascripts/plugins/*.js', 'src/javascripts/functions/*.js', 'src/javascripts/global.js']
-        dest: 'build/arquivos/tiendatest2.js'
+        src: ['src/javascripts/global.js']
+        dest: 'build/arquivos/default.js'
 
     coffee:
       main:
